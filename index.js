@@ -10,12 +10,13 @@ function retrieveEmployeeInformation() {
   return document.querySelector('input').value;
 }
 
+
 function addNewElementAsLi() {
-  let ul = document.querySelector('employee-list');
-  let li = document.createElement();
-  li.innerHTML = retrieveEmployeeInformation();
-  ul.append(li);
+  let Ul = document.querySelector(".employee-list")
+  let el = retrieveEmployeeInformation();
+  Ul.append(el);
 }
+
 
 function addNewLiOnClick() {
   let submit = document.querySelector('input'[type='submit'])
