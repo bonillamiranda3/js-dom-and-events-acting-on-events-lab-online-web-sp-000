@@ -19,7 +19,7 @@ function addNewElementAsLi() {
 
 
 function addNewLiOnClick() {
-  let theUl = document.querySelector(".employee-list")
+  let Ul = document.querySelector(".employee-list")
   let el = retrieveEmployeeInformation();
   document.querySelector('form').addEventListener('click', function(event){
     addNewElementAsLi()
