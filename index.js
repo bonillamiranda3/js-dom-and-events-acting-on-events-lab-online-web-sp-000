@@ -12,14 +12,10 @@ function retrieveEmployeeInformation() {
 
 
 function addNewElementAsLi() {
-  let Ul = document.querySelector(".employee-list")
+  let ul = document.querySelector(".employee-list")
   let el = retrieveEmployeeInformation();
-  Ul.append(el);
+  ul.append(el);
 }
-
-
-
-
 
 
 function addNewLiOnClick() {
