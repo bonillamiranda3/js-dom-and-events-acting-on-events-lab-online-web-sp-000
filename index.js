@@ -34,7 +34,7 @@ function addNewLiOnClick() {
 
 function clearEmployeeListOnLinkClick() {
   document.querySelector('a').addEventListener('click', function(event){
-    Ul = document.querySelector(".employee-list")
-    Ul.innerHTML = ''
+    ul = document.querySelector(".employee-list")
+    ul.innerHTML = ''
   });
 }
