@@ -19,18 +19,17 @@ function addNewElementAsLi() {
 
 
 function addNewLiOnClick() {
-  let submit = document.querySelector('input[type="submit"]')
-    submit.addEventListener('click', function(event){
-      addNewElementAsLi()
-      input.value = ''
-    })
+  let theUl = document.querySelector(".employee-list")
+  let el = retrieveEmployeeInformation();
+  document.querySelector('form').addEventListener('click', function(event){
+    addNewElementAsLi()
+    document.querySelector('input').value = '';
+  });
 }
-
-
 
 function clearEmployeeListOnLinkClick() {
   document.querySelector('a').addEventListener('click', function(event){
-    ul = document.querySelector(".employee-list")
-    ul.innerHTML = ''
+    theUl = document.querySelector(".employee-list")
+    theUl.innerHTML = ''
   });
 }
